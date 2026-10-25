@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name — Portfolio</title>
+  <title>Luis C. Mendoza M. — Ing. Eléctrico y Electrónico</title>
+  <meta name="description" content="Portafolio de Luis C. Mendoza M., Ingeniero Eléctrico y Electrónico (UTP, Panamá).">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,110 +16,202 @@
 
   <!-- ============ NAV ============ -->
   <header class="site-header">
-    <p class="site-header__name">Your Name</p>
+    <p class="site-header__name">Luis C. Mendoza M.</p>
     <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#about"><span class="es">Perfil</span><span class="en">About</span></a>
+      <a href="#experience"><span class="es">Experiencia</span><span class="en">Experience</span></a>
+      <a href="#skills"><span class="es">Conocimientos</span><span class="en">Skills</span></a>
+      <a href="#projects"><span class="es">Proyectos</span><span class="en">Projects</span></a>
+      <a href="#contact"><span class="es">Contacto</span><span class="en">Contact</span></a>
+      <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Cambiar idioma / Switch language">EN</button>
     </nav>
   </header>
 
-  <!-- ============ HERO ============
-       This is the first thing people see. Keep it short:
-       who you are, what you're studying, what you're looking for. -->
+  <!-- ============ HERO ============ -->
   <section class="hero">
-    <h1>Your Name</h1>
-    <p class="hero__role">Computer Science Student, Your University · Class of 2027</p>
-    <p>
-      3rd-year CS student interested in backend and web development.
-      Currently looking for a software engineering internship.
-      Replace this with your own words.
+    <div class="hero__main">
+    <h1>Luis C. Mendoza M.</h1>
+    <p class="hero__role">
+      <span class="es">Ingeniero Eléctrico y Electrónico · Universidad Tecnológica de Panamá</span>
+      <span class="en">Electrical &amp; Electronics Engineer · Technological University of Panama</span>
     </p>
-    <a href="#projects" class="btn">View Projects</a>
+    <p class="es">
+      Ingeniero eléctrico y electrónico con experiencia en mantenimiento industrial,
+      docencia universitaria y desarrollo de sistemas de monitoreo con sensores e IoT.
+    </p>
+    <p class="en">
+      Electrical and electronics engineer with experience in industrial maintenance,
+      university teaching, and building sensor-based / IoT monitoring systems.
+    </p>
+    <a href="#projects" class="btn"><span class="es">Ver proyectos</span><span class="en">View projects</span></a>
+    </div>
+    <ul class="hero__facts">
+      <li><strong><span class="es">Actual</span><span class="en">Now</span></strong>
+        <span class="es">Mantenimiento · Esclusas de Miraflores, ACP</span><span class="en">Maintenance · Miraflores Locks, ACP</span></li>
+      <li><strong><span class="es">Formación</span><span class="en">Education</span></strong>
+        <span class="es">Ing. Eléctrica y Electrónica · UTP 2024</span><span class="en">Electrical &amp; Electronics Eng. · UTP 2024</span></li>
+      <li><strong><span class="es">Publicación</span><span class="en">Publication</span></strong>
+        <span class="es">Simposio Int. de Electrónica Industrial · Ulsan, Corea</span><span class="en">Int. Symposium on Industrial Electronics · Ulsan, Korea</span></li>
+    </ul>
   </section>
 
   <!-- ============ ABOUT ============ -->
   <section id="about">
-    <h2>About</h2>
-    <p>
-      I'm a Computer Science major at Your University, focusing on
-      [e.g. web development / machine learning / distributed systems].
-      Outside of coursework, I build side projects to learn tools I don't
-      get to use in class, and I've taken part in [a hackathon / a lab /
-      a competitive programming club]. Be specific here — mention a real
-      project, course, or result rather than generic phrases like
-      "hard-working" or "fast learner."
+    <h2><span class="es">Perfil</span><span class="en">About</span></h2>
+    <div class="grid grid--about">
+    <div>
+    <p class="es">
+      Me gradué en 2024 de la Licenciatura en Ingeniería Eléctrica y Electrónica de la
+      Universidad Tecnológica de Panamá. Fui docente en la UTP, trabajé como técnico de
+      material rodante en Alstom y hoy formo parte del equipo de mantenimiento de las
+      Esclusas de Miraflores en la Autoridad del Canal de Panamá. Mi trabajo de grado, un
+      sistema de monitoreo de componentes físico-químicos en masas de agua, se publicó en
+      un simposio internacional de electrónica industrial en Ulsan, Corea del Sur.
     </p>
-  </section>
-
-  <!-- ============ SKILLS ============
-       Group by category. It's fine to include things you're still
-       learning — just say so, it shows you're growth-oriented. -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>Python</li>
-      <li>Java</li>
-      <li>JavaScript</li>
-      <li>SQL</li>
-      <li>Git</li>
-      <li>Currently learning: Go</li>
+    <p class="en">
+      I graduated in 2024 with a Bachelor's degree in Electrical and Electronics Engineering
+      from the Technological University of Panama. I taught at UTP, worked as a rolling stock
+      maintenance technician at Alstom, and I'm now part of the maintenance team at the
+      Miraflores Locks of the Panama Canal Authority. My thesis — a monitoring system for
+      physical-chemical components in water bodies — was published at an international
+      symposium on industrial electronics in Ulsan, South Korea.
+    </p>
+    </div>
+    <div class="card">
+    <h3><span class="es">Aptitudes</span><span class="en">Strengths</span></h3>
+    <ul>
+      <li><span class="es">Trabajo en equipo</span><span class="en">Teamwork</span></li>
+      <li><span class="es">Persistencia y constancia para lograr resultados</span><span class="en">Persistence and consistency to achieve results</span></li>
+      <li><span class="es">Pensamiento estratégico</span><span class="en">Strategic thinking</span></li>
+      <li><span class="es">Buena capacidad de adaptación al cambio</span><span class="en">Adaptability to change</span></li>
     </ul>
+    </div>
+    </div>
   </section>
 
-  <!-- ============ PROJECTS ============
-       Copy/paste the .project block for each project you want to show.
-       Course projects, hackathon projects, and personal projects all count —
-       pick the ones that best show what you can build. -->
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience">
+    <div class="grid grid--2">
+    <div>
+    <h2><span class="es">Experiencia</span><span class="en">Experience</span></h2>
+
+    <div class="item">
+      <h3><span class="es">Mantenimiento — Esclusas de Miraflores</span><span class="en">Maintenance — Miraflores Locks</span></h3>
+      <p class="item__meta">
+        <span class="es">Autoridad del Canal de Panamá (ACP) · División de Esclusas · Actual</span>
+        <span class="en">Panama Canal Authority (ACP) · Locks Division · Present</span>
+      </p>
+    </div>
+
+    <div class="item">
+      <h3><span class="es">Técnico de Material Rodante</span><span class="en">Rolling Stock Maintenance Technician</span></h3>
+      <!-- TODO: agregar fecha de salida de Alstom -->
+      <p class="item__meta">Alstom · <span class="es">Desde oct. 2024</span><span class="en">From Oct 2024</span></p>
+    </div>
+
+    <div class="item">
+      <h3><span class="es">Docente</span><span class="en">Professor</span></h3>
+      <p class="item__meta">
+        <span class="es">Universidad Tecnológica de Panamá · 2022 – jul. 2024</span>
+        <span class="en">Technological University of Panama · 2022 – Jul 2024</span>
+      </p>
+    </div>
+
+    </div>
+    <div>
+    <h2><span class="es">Educación</span><span class="en">Education</span></h2>
+    <div class="item">
+      <h3><span class="es">Lic. en Ingeniería Eléctrica y Electrónica</span><span class="en">B.Eng. in Electrical and Electronics Engineering</span></h3>
+      <p class="item__meta"><span class="es">Universidad Tecnológica de Panamá · 2024</span><span class="en">Technological University of Panama · 2024</span></p>
+    </div>
+    <div class="item">
+      <h3><span class="es">Bachiller en Ciencias</span><span class="en">High School Diploma in Science</span></h3>
+      <p class="item__meta"><span class="es">Escuela Secundaria Pedro Pablo Sánchez · 2017</span><span class="en">Pedro Pablo Sánchez Secondary School · 2017</span></p>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills">
+    <h2><span class="es">Conocimientos</span><span class="en">Skills</span></h2>
+    <div class="grid grid--2">
+    <div>
+    <h3><span class="es">Programación</span><span class="en">Programming</span></h3>
+    <ul class="skills-list">
+      <li>C++</li>
+      <li>Python</li>
+      <li>SQL</li>
+      <li>JavaScript</li>
+    </ul>
+    </div>
+    <div>
+    <h3>Software</h3>
+    <ul class="skills-list">
+      <li>Microsoft Office</li>
+      <li>PIC C Compiler</li>
+      <li>Visual Studio Code</li>
+      <li>Fusion 360</li>
+    </ul>
+    </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
   <section id="projects">
-    <h2>Projects</h2>
+    <h2><span class="es">Proyectos</span><span class="en">Projects</span></h2>
+    <div class="grid grid--2 projects">
 
-    <div class="project">
-      <h3>Course Project — Task Scheduler API</h3>
-      <p>
-        Built for [Course Name, e.g. "Database Systems"]. One or two
-        sentences on the problem it solves, your role, and the tech stack
-        (e.g. Python, Flask, PostgreSQL).
+    <div class="project card">
+      <h3><span class="es">Monitoring System for Physical and Chemical Components in Panama's Water Resource</span><span class="en">Monitoring System for Physical and Chemical Components in Panama's Water Resource</span></h3>
+      <p class="es">
+        Artículo publicado en el Simposio Internacional de Electrónica Industrial en Ulsan, Corea del Sur,
+        a partir de mi trabajo de grado: un sistema de monitoreo de componentes físico-químicos en masas de agua.
       </p>
-      <p class="project__links">
-        <a href="#">Live demo</a> · <a href="#">Source code</a>
+      <p class="en">
+        Paper published at the International Symposium on Industrial Electronics in Ulsan, South Korea,
+        based on my thesis: a monitoring system for physical-chemical components in water bodies.
       </p>
     </div>
 
-    <div class="project">
-      <h3>Hackathon Project — App Name</h3>
-      <p>
-        Built in 24 hours at [Hackathon Name]. What it does, what you were
-        responsible for, and what you'd improve with more time.
+    <div class="project card">
+      <h3>Smart Room</h3>
+      <p class="es">
+        Convenio de colaboración entre la Universidad de MDU (Suecia) y la UdeA (Colombia).
+        Desarrollo del procesamiento de datos eléctricos para el backend.
       </p>
-      <p class="project__links">
-        <a href="#">Live demo</a> · <a href="#">Source code</a>
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Personal Project — App Name</h3>
-      <p>
-        A side project you built to learn something new. Say what you
-        learned, not just what it does — recruiters care about the "why."
-      </p>
-      <p class="project__links">
-        <a href="#">Live demo</a> · <a href="#">Source code</a>
+      <p class="en">
+        Collaboration agreement between MDU University (Sweden) and UdeA (Colombia).
+        Developed the electrical data processing for the backend.
       </p>
     </div>
 
+    <div class="project card">
+      <h3><span class="es">Control y monitoreo de generación de agua caliente con PCM</span><span class="en">Control &amp; monitoring for PCM hot-water generation</span></h3>
+      <p class="es">
+        Sistema de control y monitoreo para generación de agua caliente con materiales de cambio de fase (PCM)
+        mediante colectores solares.
+      </p>
+      <p class="en">
+        Control and monitoring system for hot-water generation with phase-change materials (PCM)
+        using solar collectors.
+      </p>
+    </div>
+
+    <div class="project card">
+      <h3><span class="es">Convenio de Colaboración Educativa DIACT No. 057-2021</span><span class="en">Educational Collaboration Agreement DIACT No. 057-2021</span></h3>
+    </div>
+    </div>
   </section>
 
   <!-- ============ CONTACT ============ -->
   <footer id="contact">
-    <h2>Contact</h2>
+    <h2><span class="es">Contacto</span><span class="en">Contact</span></h2>
     <p>
-      <a href="mailto:your.email@example.com">your.email@example.com</a><br>
-      <a href="https://github.com/your-username">GitHub</a><br>
-      <a href="https://linkedin.com/in/your-profile">LinkedIn</a>
+      <a href="mailto:luismendozamagallon@hotmail.com">luismendozamagallon@hotmail.com</a>
+      <a href="https://github.com/ingluis-prog">GitHub</a>
     </p>
-    <p class="footer__copyright">&copy; <span id="year"></span> Your Name</p>
+    <p class="footer__copyright">&copy; <span id="year"></span> Luis C. Mendoza M.</p>
   </footer>
 
   <script src="js/script.js"></script>

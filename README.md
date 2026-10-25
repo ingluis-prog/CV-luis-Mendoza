@@ -1,4 +1,4 @@
-# Your Name — Portfolio Template
+# Luis C. Mendoza M. — Portafolio
 
 A deliberately minimal starting point — plain HTML/CSS/JS, no build tools, no design opinions baked in. The goal is a clean, modern, and responsive skeleton you can make your own: change the colors, fonts, and layout as you like.
 
